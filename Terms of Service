@@ -1,0 +1,77 @@
+# Terms of Service — AC Update Watcher
+
+**Last updated:** [DATE]
+
+## 1. Acceptance
+
+By using AC Update Watcher ("the Bot"), you agree to these Terms. If you
+do not agree, do not use the Bot.
+
+## 2. What the Bot does
+
+The Bot monitors the Steam depot for Animal Company (App ID 4551040) for
+updates and generates remapped IL2CPP symbol files for personal use. It
+provides the following slash commands:
+
+- `/status` — show current build state
+- `/check` — force a remap without committing state
+- `/remap` — force a remap and commit the new build ID
+- `/files` — list available output files
+- `/bridge` — get the patched ac_bridge.js
+- `/symbols` — get the current symbols.ts
+
+## 3. No warranty
+
+The Bot is provided **"as is"** and **"as available"** without warranty of
+any kind, express or implied, including but not limited to warranties of
+merchantability, fitness for a particular purpose, or non-infringement.
+
+The Bot relies on:
+- **Discord's API** — for command delivery
+- **SteamCMD API** — for build ID lookups
+- **The game's UnityPlayer.dll** — for symbol remapping
+
+Any of these may change, break, or be unavailable at any time. The Bot
+owner is not responsible for any failures, downtime, incorrect output, or
+damages resulting from the Bot's use or unavailability.
+
+## 4. Acceptable use
+
+You agree NOT to:
+
+- Use the Bot to violate Discord's Terms of Service or Community Guidelines
+- Use the Bot to violate any applicable law
+- Abuse, spam, or intentionally overload the Bot or its dependencies
+- Attempt to reverse-engineer, exploit, or interfere with the Bot's
+  operation beyond normal use
+- Resell or redistribute the Bot's output files as your own product
+- Use the Bot for commercial purposes without prior permission from the
+  owner
+
+## 5. Output files
+
+Generated files (`symbols.ts`, `SymbolMap.json`, `ac_bridge.js`) are
+derived from the game's binary. You are responsible for how you use them.
+The Bot owner makes no claim about the legality of using these files in any
+specific context.
+
+## 6. Availability
+
+The Bot may be taken offline, restricted, or modified at any time without
+notice. The owner reserves the right to block any user or server from using
+the Bot.
+
+## 7. Limitation of liability
+
+To the maximum extent permitted by law, the Bot owner shall not be liable
+for any indirect, incidental, special, consequential, or punitive damages
+arising from your use of the Bot.
+
+## 8. Changes
+
+These Terms may be updated occasionally. Continued use of the Bot after
+changes constitutes acceptance of the updated Terms.
+
+## 9. Contact
+
+For questions about these Terms, contact: **[YOUR DISCORD USERNAME]**
