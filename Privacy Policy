@@ -1,0 +1,91 @@
+# Privacy Policy — AC Update Watcher
+
+**Last updated:** [DATE]
+
+## 1. What this bot is
+
+AC Update Watcher ("the Bot") is a private Discord bot that monitors the
+Steam depot for Animal Company (App ID 4551040) for updates, and generates
+remapped IL2CPP symbol files (`symbols.ts`, `SymbolMap.json`, `ac_bridge.js`)
+for personal use.
+
+## 2. What data the Bot processes
+
+The Bot processes the following data when you interact with it:
+
+- **Discord User ID** — used to identify who ran a slash command, so the
+  Bot can reply to that user.
+- **Discord Channel ID** — used to know where to send update
+  notifications and replies.
+- **Discord Guild (Server) ID** — used to scope the Bot to the server it
+  runs in.
+- **Command name and options** — used to route slash commands (`/status`,
+  `/check`, `/remap`, `/files`, `/bridge`, `/symbols`).
+- **File attachments you send** (if any) — only if you explicitly upload
+  files for the Bot to process.
+
+The Bot does **not** collect:
+- Message content from channels it isn't mentioned in
+- Email addresses, phone numbers, or real names
+- IP addresses or device information
+- Payment information
+- Any data from users who never interact with the Bot
+
+## 3. How the data is used
+
+Data is used **only** to operate the Bot's features:
+
+- To respond to your slash commands
+- To deliver generated files (symbols.ts, SymbolMap.json, ac_bridge.js) to
+  the channel or user that requested them
+- To post automatic update notifications to the configured updates channel
+- To track the last known Steam buildid in `state.json` so the Bot doesn't
+  re-process the same update twice
+
+## 4. Data storage and retention
+
+- **Discord User IDs, Channel IDs, and Guild IDs** are processed in memory
+  to respond to commands and are **not stored persistently** by the Bot.
+- **Command invocations** may appear in the Bot's standard log output
+  (console / log file) for debugging, and are rotated/deleted regularly.
+- **`state.json`** stores only:
+  - `last_buildid` — the last Steam build ID processed (public data)
+  - `unity_version` — the last Unity version detected (public data)
+  This file contains **no Discord user data**.
+- **Generated files** (`symbols.ts`, `SymbolMap.json`, `ac_bridge.js`) are
+  created from the game's DLL and contain no Discord user data.
+
+## 5. Data sharing
+
+The Bot does **not** sell, rent, trade, or share Discord user data with any
+third party. The only external services the Bot contacts are:
+
+- **Discord's API** — to receive commands and send replies
+- **SteamCMD API** (api.steamcmd.net) — to check the current build ID for
+  Animal Company
+
+No user data is sent to SteamCMD.
+
+## 6. Your rights
+
+You may request:
+- Confirmation of whether the Bot has processed any data about you
+- Deletion of any log entries containing your User ID
+- An explanation of how your data is handled
+
+To make a request, contact the Bot owner at: **[YOUR DISCORD USERNAME]**
+
+## 7. Children
+
+The Bot is not intended for users under 13 (or the applicable digital
+consent age in your jurisdiction). It does not knowingly process data from
+children.
+
+## 8. Changes
+
+This policy may be updated occasionally. The "Last updated" date at the
+top will reflect the most recent change.
+
+## 9. Contact
+
+For questions about this policy, contact: **[YOUR DISCORD USERNAME]**
